@@ -1,0 +1,71 @@
+/* Header Styles */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #d97706; /* amber-800 equivalent */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.color-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.color-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.color-button:active {
+  transform: translateY(0);
+}
+
+/* Specific button colors */
+.color-button.black {
+  background-color: #000000;
+}
+
+.color-button.white {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.color-button.default {
+  background-color: #D6dee9;
+  color: #000000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-center {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .color-button {
+    min-width: 120px;
+  }
+}
